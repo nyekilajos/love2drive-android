@@ -3,6 +3,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     signingConfigs {
         releaseConfig {
             keyAlias releaseKeyAlias
@@ -45,6 +49,12 @@ android {
     }
 }
 
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_7
+    defaultMethods false
+    incremental true
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -70,9 +80,9 @@ dependencies {
     compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1'
     compile 'com.google.dagger:dagger-android:2.10'
     compile 'com.google.dagger:dagger-android-support:2.10'
-    annotationProcessor 'com.google.dagger:dagger-android-processor:2.10'
     compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.10'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

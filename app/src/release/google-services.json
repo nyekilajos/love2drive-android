@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "286287920817",
+    "project_id": "love-2-drive"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286287920817:android:a33bbb9382fc9a47",
+        "android_client_info": {
+          "package_name": "com.nyekilajos.love2drive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286287920817-n1fvrpglsu80amc16387og0fea4vac1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nyekilajos.love2drive",
+            "certificate_hash": "1df38a03ce3320969e915edc5fd8e6c18b7ac3f5"
+          }
+        },
+        {
+          "client_id": "286287920817-uoa8f0jq9e9c9e7k20n9lt618ecf4osf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTZGgN08yxlTmTeR1FWeGfJPg4BrbEuNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
